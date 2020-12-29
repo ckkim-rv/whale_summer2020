@@ -55,7 +55,7 @@ gaps <- gaps[!is.na(gaps)]
 
 gaps <- as.numeric(gaps)
 
-gaps <- gaps*(365)
+gaps <- gaps*(365.25)
 
 # only take gaps that are negative (otherwise it's nonsensical)
 gaps <- gaps[ 0 > gaps]
