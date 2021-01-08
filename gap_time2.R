@@ -44,6 +44,5 @@ for (i in 1: nrow(id_year)){
 
 id_year1 <- id_year[id_year$whaleid %in% seen,]
 
-seen1 <- c()
 
 
