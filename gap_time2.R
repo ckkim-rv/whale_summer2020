@@ -29,11 +29,11 @@ increment <- function(x)
 
 target <- 1992
 t <- 0
-t_1 <- 0
-t_2 <- 0
-t_3 <- 0
-t_4 <- 0
-t_5 <- 0
+t1 <- 0
+t2 <- 0
+t3 <- 0
+t4 <- 0
+t5 <- 0
 
 gap_time <- function(idyear,n,target_year,seen,tally)
 {
@@ -80,4 +80,8 @@ id_year5 <- id_year4[id_year4$whaleid %in% seen4,]
 seen5 <- c()
 
 gap_time(id_year,5,target,seen5,t5)
+
+tally_results <- c(t,t1,t2,t3,t4,t5)
+
+print(tally_results)
 
