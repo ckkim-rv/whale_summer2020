@@ -29,20 +29,55 @@ increment <- function(x)
 
 target <- 1992
 t <- 0
+t_1 <- 0
+t_2 <- 0
+t_3 <- 0
+t_4 <- 0
+t_5 <- 0
 
-
-seen <- c()
-
-for (i in 1: nrow(id_year)){
-  if(id_year[i,2]==target){
-    increment(t)
-    seen <- c(seen,id_year[i,1])
-  }else{
-    1
+gap_time <- function(idyear,n,target_year,seen,tally)
+{
+    for (i in 1: nrow(idyear)){
+    if(idyear[i,2]==target_year+n){
+      increment(tally)
+      seen <- c(seen,idyear[i,1])
+    }else{
+      1
+    }
   }
 }
 
+seen0 <- c()
+
+gap_time(id_year,0,target,seen0,t)
+
 id_year1 <- id_year[id_year$whaleid %in% seen,]
 
+seen1 <- c()
 
+gap_time(id_year,1,target,seen1,t1)
+
+id_year2 <- id_year1[id_year1$whaleid %in% seen1,]
+
+seen2 <- c()
+
+gap_time(id_year,2,target,seen2,t2)
+
+id_year3 <- id_year2[id_year2$whaleid %in% seen2,]
+
+seen3 <- c()
+
+gap_time(id_year,3,target,seen3,t3)
+
+id_year4 <- id_year3[id_year3$whaleid %in% seen3,]
+
+seen4 <- c()
+
+gap_time(id_year,4,target,seen4,t4)
+
+id_year5 <- id_year4[id_year4$whaleid %in% seen4,]
+
+seen5 <- c()
+
+gap_time(id_year,5,target,seen5,t5)
 
