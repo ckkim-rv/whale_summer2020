@@ -9,4 +9,4 @@
   1. It counts the number of individual whales observed in the year t
   2. Then, it looks at t+1 through t+5 years and checks if the whales from year t are observed again.
   
-These two methods are efforts to more appropriately calculate probaliveold, vector of survival rates of individual whales (identified by unique whale IDs) that are later to be adjusted by our model.
+These two methods are efforts to more appropriately calculate probaliveold, a vector of survival rates of individual whales (identified by unique whale IDs) that are later to be adjusted by our model.
