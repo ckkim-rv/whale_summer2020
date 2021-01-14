@@ -1,7 +1,10 @@
 # North Atlantic Whale Project
 - Summer project from 2020. Worked with Professor Steve Wang and Horace Shew, all from Swarthmore College. Previous contributors are mentioned in the Rcode.
-- In this project, we predict the population size of North Atlantic Whales, an almost extinct species.
+- In this project, we predict the population size of North Atlantic Whales, an endangered large species.
 - Data is pulled from NARWC
+# Rcode
+- Main portion of the project. Converts sighting-level dataset to a whale-level datset (i.e. so that each entry is unique to one whale),
+- Logistic regression model that would adjust individual whales' pre-calculated survival rates.
 # Gap time code v1
 - Gap time code v1 analyses the average gap time of all whales (thus, for whales that are seen again)
 # Gap time code v2
